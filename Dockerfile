@@ -36,7 +36,7 @@ RUN useradd  -s /sbin/nologin proxy
 RUN echo "proxy:proxy" > /tmp/proxy.pass
 RUN chpasswd < /tmp/proxy.pass
 ADD danted.conf /etc/danted.conf
-ADD danted.sh /opt/danted.sh
+RUN echo "sockd -f /etc/danted.conf" > /opt/danted.sh
 #设置读写权限
 RUN chmod -R 777 /opt
 #设置进入启动项
