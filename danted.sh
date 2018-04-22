@@ -1,0 +1,1 @@
+sockd -f /etc/danted.conf
