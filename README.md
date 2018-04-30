@@ -17,3 +17,7 @@ ip:8822 root/root
 
 #### socks5 proxy username/password
 proxy/proxy
+
+#### no passwd
+vim /etc/danted.conf
+method: username none
