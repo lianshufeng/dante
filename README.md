@@ -19,5 +19,12 @@ ip:8822 root/root
 proxy/proxy
 
 #### no passwd
-vim /etc/danted.conf
+vi /etc/danted.conf
 method: username none
+
+pkill sockd
+sh /opt/danted.sh &
+
+
+### test
+curl --socks5 127.0.0.1:1080 -U proxy:proxy http://www.google.com
