@@ -26,3 +26,4 @@ sh /opt/danted.sh &
 
 ### test
 curl --socks5 127.0.0.1:1080 -U proxy:proxy http://www.google.com
+
